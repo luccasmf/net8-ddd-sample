@@ -1,5 +1,4 @@
 using net8_ddd_sample.ioc.ServiceCollectionExtensions;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;

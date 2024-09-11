@@ -15,9 +15,7 @@
 	  <ProjectReference Include="..\net8-ddd-sample.domain\net8-ddd-sample.Domain.csproj">
 		  <PrivateAssets>All</PrivateAssets>
 	  </ProjectReference>
-    <ProjectReference Include="..\net8-ddd-sample.infra.data\net8-ddd-sample.Infra.csproj">
-		<PrivateAssets>All</PrivateAssets>
-	</ProjectReference>
+	  <ProjectReference Include="..\net8-ddd-sample.infra\net8-ddd-sample.Infra.csproj" />
     <ProjectReference Include="..\net8-ddd-sample.service\net8-ddd-sample.Services.csproj">
 		<PrivateAssets>All</PrivateAssets>
 	</ProjectReference>
