@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net8-ddd-sample.Application", "net8-ddd-sample.application\net8-ddd-sample.Application.csproj", "{49F6798D-B578-4CB9-9D82-70AB344B20A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "net8-ddd-sample.Application", "net8-ddd-sample.application\net8-ddd-sample.Application.csproj", "{49F6798D-B578-4CB9-9D82-70AB344B20A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net8-ddd-sample.Domain", "net8-ddd-sample.domain\net8-ddd-sample.Domain.csproj", "{BF9ACAF5-3DEC-416E-BB9B-A2FA4AC7E6E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "net8-ddd-sample.Domain", "net8-ddd-sample.domain\net8-ddd-sample.Domain.csproj", "{BF9ACAF5-3DEC-416E-BB9B-A2FA4AC7E6E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net8-ddd-sample.Services", "net8-ddd-sample.service\net8-ddd-sample.Services.csproj", "{CC3C131D-DE8D-408F-A4CC-08590430A24A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "net8-ddd-sample.Services", "net8-ddd-sample.service\net8-ddd-sample.Services.csproj", "{CC3C131D-DE8D-408F-A4CC-08590430A24A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net8-ddd-sample.Infra", "net8-ddd-sample.infra\net8-ddd-sample.Infra.csproj", "{8906BD32-CB3F-4189-A8E6-C4268DFC6B79}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "net8-ddd-sample.Infra", "net8-ddd-sample.infra\net8-ddd-sample.Infra.csproj", "{8906BD32-CB3F-4189-A8E6-C4268DFC6B79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net8-ddd-sample.Ioc", "net8-ddd-sample.ioc\net8-ddd-sample.Ioc.csproj", "{93E6960C-C2EE-44F8-BBA0-ADC77AFF4938}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "net8-ddd-sample.Ioc", "net8-ddd-sample.ioc\net8-ddd-sample.Ioc.csproj", "{93E6960C-C2EE-44F8-BBA0-ADC77AFF4938}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E39C847F-3612-4813-9862-86DD3B0DA869}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

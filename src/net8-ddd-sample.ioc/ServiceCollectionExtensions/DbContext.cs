@@ -9,7 +9,7 @@ namespace net8_ddd_sample.ioc.ServiceCollectionExtensions
         #region Methods
         public static void AddDbContext(this IServiceCollection services, string connectionString)
         {
-            services.AddDbContext<MyDbContext>(options => options.UseInMemoryDatabase(connectionString));
+            services.AddDbContext<MyDbContext>(options => options.UseNpgsql(connectionString));
 
         }
         #endregion
