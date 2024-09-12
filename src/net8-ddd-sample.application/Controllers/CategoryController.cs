@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using net8_ddd_sample.domain.Entities;
 using net8_ddd_sample.domain.Interfaces.Services;
 
@@ -6,6 +7,7 @@ namespace net8_ddd_sample.application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryServices _categoryServices;

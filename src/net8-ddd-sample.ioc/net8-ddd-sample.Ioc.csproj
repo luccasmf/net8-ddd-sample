@@ -1,29 +1,36 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>net8_ddd_sample.ioc</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<RootNamespace>net8_ddd_sample.ioc</RootNamespace>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>dfa41f91-5ee4-42ad-8c1d-a25c0ac5efe2</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.2" />
-    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="8.0.2" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.8" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.0.8" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.8" />
-    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="AspNetCore.HealthChecks.NpgSql" Version="8.0.2" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI" Version="8.0.2" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.8" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="8.0.8" />
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="8.0.8" />
+		<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="8.0.2" />
+		<PackageReference Include="Microsoft.IdentityModel.Protocols" Version="8.0.2" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.2" />
+	</ItemGroup>
 
-  <ItemGroup>
-	  <ProjectReference Include="..\net8-ddd-sample.domain\net8-ddd-sample.Domain.csproj">
-		  <PrivateAssets>All</PrivateAssets>
-	  </ProjectReference>
-	  <ProjectReference Include="..\net8-ddd-sample.infra\net8-ddd-sample.Infra.csproj" />
-    <ProjectReference Include="..\net8-ddd-sample.service\net8-ddd-sample.Services.csproj">
-		<PrivateAssets>All</PrivateAssets>
-	</ProjectReference>
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\net8-ddd-sample.domain\net8-ddd-sample.Domain.csproj">
+			<PrivateAssets>All</PrivateAssets>
+		</ProjectReference>
+		<ProjectReference Include="..\net8-ddd-sample.infra\net8-ddd-sample.Infra.csproj" />
+		<ProjectReference Include="..\net8-ddd-sample.service\net8-ddd-sample.Services.csproj">
+			<PrivateAssets>All</PrivateAssets>
+		</ProjectReference>
+	</ItemGroup>
 
 </Project>

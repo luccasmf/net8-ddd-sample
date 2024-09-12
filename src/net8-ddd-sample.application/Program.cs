@@ -1,6 +1,5 @@
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.OpenApi.Models;
 using net8_ddd_sample.application.Configuration;
 using net8_ddd_sample.ioc.ServiceCollectionExtensions;
 using System.Reflection;
@@ -13,17 +12,7 @@ var dbConnectionString = configuration.GetConnectionString("DbConnectionString")
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
-{
-    var version = "v1";
-    options.SwaggerDoc(version, new OpenApiInfo
-    {
-
-        Title = $".Net 8 DDD - {version}",
-        Version = version,
-        Description = "My description about this solution in DDD (Domain Driven Design) architecture.",
-    });
-});
+builder.Services.ConfigureSwagger();
 
 builder.Configuration.AddEnvironmentVariables()
     .AddUserSecrets(Assembly.GetExecutingAssembly(), true);
@@ -33,6 +22,7 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureDependencyInjection();
 builder.Services.AddOptions();
 builder.Services.AddLocalization();
+builder.Services.AddAuthentication(configuration);
 
 // Healthz
 builder.Services.ConfigureHealthz(dbConnectionString);

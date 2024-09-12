@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using net8_ddd_sample.application.DTO.Responses;
 using net8_ddd_sample.domain.Entities;
@@ -8,6 +9,7 @@ namespace net8_ddd_sample.application.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
     public class ProductController : ControllerBase
     {
         private readonly IProductServices _productServices;

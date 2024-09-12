@@ -5,6 +5,7 @@
     <RootNamespace>net8_ddd_sample.domain</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<UserSecretsId>dfa41f91-5ee4-42ad-8c1d-a25c0ac5efe2</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
