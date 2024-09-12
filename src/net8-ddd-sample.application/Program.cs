@@ -1,13 +1,8 @@
 using HealthChecks.UI.Client;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using net8_ddd_sample.application.Configuration;
-using net8_ddd_sample.domain.Interfaces.Services;
 using net8_ddd_sample.ioc.ServiceCollectionExtensions;
-using System.Globalization;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -71,7 +66,7 @@ app.MapHealthChecks("/api/health", new HealthCheckOptions()
 
 using (var scope = app.Services.CreateScope())
 {
-  scope.MigrateDb();
+    scope.MigrateDb();
 }
 
 app.Run();

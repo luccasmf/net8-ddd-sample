@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using net8_ddd_sample.domain.Entities;
 using net8_ddd_sample.domain.Interfaces.Services;
 

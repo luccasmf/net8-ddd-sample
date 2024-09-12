@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using net8_ddd_sample.application.DTO.Responses;
 using net8_ddd_sample.domain.Entities;
